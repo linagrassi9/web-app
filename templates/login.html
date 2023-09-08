@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" href="/jdid.png"/>
+</head>
+<body>
+<main>
+  <div class="lina">
+    <a href="/">
+        <span>Home</span>
+        <div class="lina"></div>
+    </a>
+<section class="intro">
+</section>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="Username" required>
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required>
+            <label>password</label>
+          </div>
+    
+          <a href="/bill_submission">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            login
+          </a>
+          <div class="signup"></div>
+          <h3>Don't have an account? <a href="/signup">Signup</a></h3>
+        </form>
+      </div>
+</main>
+
+<footer>
+</footer>
+
+<script src="script.js"></script> <!-- Link your JavaScript file here -->
+</body>
+</html>

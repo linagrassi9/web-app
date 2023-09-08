@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="lina">
+    <a href="/">
+        <span>Home</span>
+        <div class="lina"></div>
+    </a>
+    <div class="submission-container">
+        <h2>Submit a Bill</h2>
+        <form method="POST" action="{{ url_for('bill_submission') }}" enctype="multipart/form-data">
+            <div class="user-box">
+                <input type="text" name="supplier_name" required>
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="registration_number" required>
+                <label>password</label>
+              </div>
+              <div class="user-box">
+                <input type="number" name="bill_amount" required>
+                <label>amout</label>
+              </div>
+              <div class="user-box">
+                <input type="date" name="bill_date" required>
+              </div>
+              <div class="user-box">
+                <input type="file" name="bill_image" accept="image/*" required>
+              </div>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    submit
+                  </a>
+                  <div class="signup"></div>
+                  <h3>are you done?<a href="/home">logout</a></h3>
+        </form>
+    </div>
+</body>
+</html>
